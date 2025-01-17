@@ -93,31 +93,52 @@ function Timeline() {
   const events = [
     {
       id: 1,
-      date: 'January 15, 2023',
+      // date: 'January 15, 2023',
       title: 'First Meeting',
       description: 'The day our eyes met and hearts connected.',
       align: 'left'
     },
     {
       id: 2,
-      date: 'February 14, 2023',
+      // date: 'February 14, 2023',
       title: 'First Date',
-      description: 'A magical evening under the stars.',
+      description: 'A magical evening with laughters and past regrets',
       align: 'right'
     },
     {
       id: 3,
-      date: 'April 1, 2023',
-      title: 'First Trip Together',
-      description: 'Adventure of a lifetime exploring new places.',
+      // date: 'June 15, 2023',
+      title: 'Darjeeling trip',
+      description: 'Got photo everyday, that was the best.',
       align: 'left'
     },
     {
       id: 4,
-      date: 'June 15, 2023',
-      title: 'Moving In Together',
-      description: 'Starting our life under one roof.',
+      // date: 'April 1, 2023',
+      title: 'Long Distance',
+      description: 'We decided that distance really sucks, but we are good lovers <3.',
       align: 'right'
+    },
+    {
+      id: 5,
+      // date: 'April 1, 2023',
+      title: 'sath Bhaagne ka plan',
+      description: 'We should try to kill the distance, and go to the mountains forever <3.',
+      align: 'left'
+    },
+    {
+      id: 6,
+      // date: 'April 1, 2023',
+      title: 'Dream to Travel',
+      description: 'I want to travel all the places with you(mostly Europe).',
+      align: 'right'
+    },
+    {
+      id: 7,
+      // date: 'April 1, 2023',
+      title: 'At Last, I wanna do toit nups with ya',
+      description: 'Lemme pick you up, lets goooo',
+      align: 'left'
     }
   ];
 

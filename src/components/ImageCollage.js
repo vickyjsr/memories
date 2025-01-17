@@ -267,69 +267,41 @@ function ImageCollage() {
   const dates = [
     {
       id: 1,
-      title: "First Coffee Date ☕",
-      date: "January 15, 2023",
-      mainImage: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486",
+      title: "Dates <3",
+      mainImage: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fa9dd8c6b-f858-4fab-a19a-4cf13a399442.jpg?alt=media&token=f236f970-85d4-44de-b25d-0fa3f520968e",
       images: [
-        { url: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486", caption: "Coffee time" },
-        { url: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2", caption: "Laughs" },
-        { url: "https://images.unsplash.com/photo-1503516459261-40c66117780a", caption: "Walk" },
-        { url: "https://images.unsplash.com/photo-1474552226712-ac0f0961a954", caption: "Evening" }
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_4326.jpg?alt=media&token=3a7161ba-9ef6-490e-a071-4dbc417b50f7", caption: "Marcony" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9959.JPG?alt=media&token=14d9cf49-bbcf-4f93-9991-7a3d86b2855a", caption: "Cofeeeeeeee" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9431.jpg?alt=media&token=a260497b-89af-445a-84b1-7778ddc67792", caption: "Paneeeerr" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fa9dd8c6b-f858-4fab-a19a-4cf13a399442.jpg?alt=media&token=f236f970-85d4-44de-b25d-0fa3f520968e", caption: "Pijjjjaaaaaaa" }
       ]
     },
     {
       id: 2,
-      title: "Beach Sunset 🌅",
-      date: "February 14, 2023",
-      mainImage: "https://images.unsplash.com/photo-1515238152791-8216bfdf89a7",
+      title: "Smiling Preeti 🌅",
+      mainImage: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_8998.JPG?alt=media&token=c552830a-fa25-44c1-b35a-b6dca67b5623",
       images: [
-        { url: "https://images.unsplash.com/photo-1515238152791-8216bfdf89a7", caption: "Sunset view" },
-        { url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e", caption: "Beach walk" },
-        { url: "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a", caption: "Together" }
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9690.JPG?alt=media&token=f08cfe66-3e81-4f1c-98b1-1f7d6e6debd4", caption: "College" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc6a69a15-88b6-4084-b81c-7307db81a2a1.JPG?alt=media&token=c3cfd2d7-148a-49e2-bc71-9bc2b11819ba", caption: "home" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc374b3cb-ccae-4884-bd7d-abc1f0d8476b.JPG?alt=media&token=d837838e-c679-4b9c-9fb8-f7c18c089f1a", caption: "Pink Panther" }
       ]
     },
     {
       id: 3,
-      title: "Movie Night 🎬",
-      date: "March 1, 2023",
-      mainImage: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c",
+      title: "Mirror Pic 🌸",
+      mainImage: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fa5505b27-a787-4444-a84a-56a28e0f10c3.JPG?alt=media&token=6d71c439-deec-4b22-bdb8-72feefcdabbf",
       images: [
-        { url: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c", caption: "Movie time" },
-        { url: "https://images.unsplash.com/photo-1585647347483-22b66260dfff", caption: "Popcorn" },
-        { url: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1", caption: "Cinema" }
-      ]
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fef4996cd-fdea-4761-976e-b263655e7f0f.JPG?alt=media&token=d2ca6f6e-0c4a-487b-bb71-185713be4b4c", caption: "" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fd405f4d9-3ca7-4d64-84a1-fc6e050895e9.JPG?alt=media&token=7f217e43-aefd-416f-b167-9b7be736abf8", caption: "" }      ]
     },
     {
       id: 4,
-      title: "Park Picnic 🧺",
-      date: "April 5, 2023",
-      mainImage: "https://images.unsplash.com/photo-1526401485004-46910ecc8e51",
+      title: "My Favorites 🧺",
+      mainImage: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_3081.jpg?alt=media&token=4ebae6d6-4b33-45f7-bebe-61318f5628b7",
       images: [
-        { url: "https://images.unsplash.com/photo-1526401485004-46910ecc8e51", caption: "Picnic setup" },
-        { url: "https://images.unsplash.com/photo-1511632765486-a01980e01a18", caption: "Park views" },
-        { url: "https://images.unsplash.com/photo-1540857890800-058ca4c7b464", caption: "Together" }
-      ]
-    },
-    {
-      id: 5,
-      title: "Garden Walk 🌸",
-      date: "May 20, 2023",
-      mainImage: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
-      images: [
-        { url: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07", caption: "Spring flowers" },
-        { url: "https://images.unsplash.com/photo-1557968897-c6cf8f5945d5", caption: "Garden path" },
-        { url: "https://images.unsplash.com/photo-1504713215707-c0696311ff10", caption: "Together" }
-      ]
-    },
-    {
-      id: 6,
-      title: "Dinner Date 🍝",
-      date: "June 10, 2023",
-      mainImage: "https://images.unsplash.com/photo-1529516548873-9ce57c8f155e",
-      images: [
-        { url: "https://images.unsplash.com/photo-1529516548873-9ce57c8f155e", caption: "Romantic dinner" },
-        { url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0", caption: "Restaurant" },
-        { url: "https://images.unsplash.com/photo-1470337458703-46ad1756a187", caption: "Cheers" }
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9431.jpg?alt=media&token=a260497b-89af-445a-84b1-7778ddc67792", caption: "" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc374b3cb-ccae-4884-bd7d-abc1f0d8476b.JPG?alt=media&token=d837838e-c679-4b9c-9fb8-f7c18c089f1a", caption: "" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fe71d9d5e-99a9-4afb-8fab-6183596be1b6.jpg?alt=media&token=55edaf56-f17f-4dfb-98d5-c0a38b9f2887", caption: "" }
       ]
     }
   ];

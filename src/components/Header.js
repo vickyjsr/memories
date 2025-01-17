@@ -77,7 +77,7 @@ function Header() {
         animate={{ scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        Our Story
+        Our Love Story
       </Title>
       <Subtitle>Cherishing moments together, one memory at a time</Subtitle>
     </HeaderContainer>

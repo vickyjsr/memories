@@ -319,165 +319,57 @@ function AbstractGallery() {
   const memories = [
     {
       id: 1,
-      url: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486',
+      url: 'https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9963.JPG?alt=media&token=a84e4cd0-9be5-461a-bcd9-1635ecbf47a8',
       title: 'First Coffee Date',
-      description: 'The aroma of freshly brewed coffee and the sparkle in your eyes made this moment unforgettable.',
-      date: 'Jan 15, 2023',
+      description: 'First fancy date',
+      // date: 'Jan 15, 2023',
       category: 'First Moments',
       color: 'rgba(255, 99, 71, 0.3)'
     },
     {
       id: 2,
-      url: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2',
-      title: 'Starlit Cinema',
-      description: 'Under a blanket of stars, we created our own movie magic.',
-      date: 'Feb 14, 2023',
-      category: 'Adventures',
+      url: 'https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fb36fe041-c031-4804-8180-adfb66d34747.JPG?alt=media&token=f2a606f9-aa5b-429b-8644-6667c5a21445',
+      title: 'Oldest Pic',
+      description: 'Cute young Preeti',
+      // date: 'Feb 14, 2023',
+      category: 'Laathi charge',
       color: 'rgba(70, 130, 180, 0.3)'
     },
     {
       id: 3,
-      url: 'https://images.unsplash.com/photo-1503516459261-40c66117780a',
-      title: 'Spring Blossoms',
-      description: 'Cherry blossoms dancing in the wind, painting our world in soft pink hues.',
-      date: 'Mar 20, 2023',
-      category: 'Nature',
+      url: 'https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9690.JPG?alt=media&token=f08cfe66-3e81-4f1c-98b1-1f7d6e6debd4',
+      title: 'Fest',
+      description: 'Happy happy happy',
+      // date: 'Mar 20, 2023',
+      category: 'College',
       color: 'rgba(144, 238, 144, 0.3)'
     },
     {
       id: 4,
-      url: 'https://images.unsplash.com/photo-1474552226712-ac0f0961a954',
-      title: 'Golden Hour',
-      description: 'The sun painted the sky in shades of gold, just for us.',
-      date: 'Apr 5, 2023',
-      category: 'Sunsets',
+      url: 'https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9431.jpg?alt=media&token=a260497b-89af-445a-84b1-7778ddc67792',
+      title: 'After Golden Hour',
+      description: 'Noice veggie date',
+      // date: 'Apr 5, 2023',
+      category: 'Cafe',
       color: 'rgba(255, 165, 0, 0.3)'
     },
     {
       id: 5,
-      url: 'https://images.unsplash.com/photo-1501426026826-31c667bdf23d',
-      title: 'Ocean Whispers',
-      description: 'Waves crashing at our feet, writing stories in the sand.',
-      date: 'May 10, 2023',
-      category: 'Beach Days',
+      url: 'https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_8998.JPG?alt=media&token=c552830a-fa25-44c1-b35a-b6dca67b5623',
+      title: 'Achievement & Medals',
+      description: 'Doctor coat',
+      // date: 'May 10, 2023',
+      category: 'Happy Day',
       color: 'rgba(0, 191, 255, 0.3)'
     },
     {
       id: 6,
-      url: 'https://images.unsplash.com/photo-1519681393784-d120267933ba',
-      title: 'Mountain Peak',
-      description: 'Above the clouds, we found our piece of heaven.',
-      date: 'Jun 15, 2023',
-      category: 'Adventures',
+      url: 'https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_3695.JPG?alt=media&token=d4f70945-642b-4363-b42d-de6f8054092f',
+      title: 'Mukhra',
+      description: 'Muskuraiye, aap humare sath hain.',
+      // date: 'Jun 15, 2023',
+      category: 'Call',
       color: 'rgba(70, 130, 180, 0.3)'
-    },
-    {
-      id: 7,
-      url: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a',
-      title: 'Ice Cream Dreams',
-      description: 'Sweet treats and sweeter smiles on a warm summer day.',
-      date: 'Jul 3, 2023',
-      category: 'Summer Fun',
-      color: 'rgba(255, 182, 193, 0.3)'
-    },
-    {
-      id: 8,
-      url: 'https://images.unsplash.com/photo-1533420896084-06d2bce5365f',
-      title: 'Ferris Wheel Magic',
-      description: 'City lights twinkling below as we touched the sky.',
-      date: 'Jul 20, 2023',
-      category: 'Night Out',
-      color: 'rgba(138, 43, 226, 0.3)'
-    },
-    {
-      id: 9,
-      url: 'https://images.unsplash.com/photo-1507371341959-9fb4080ddab3',
-      title: 'Autumn Picnic',
-      description: 'Surrounded by falling leaves and your warm embrace.',
-      date: 'Sep 15, 2023',
-      category: 'Seasonal',
-      color: 'rgba(205, 133, 63, 0.3)'
-    },
-    {
-      id: 10,
-      url: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0',
-      title: 'Morning Bliss',
-      description: 'Sunrise coffee dates and whispered dreams.',
-      date: 'Sep 30, 2023',
-      category: 'Mornings',
-      color: 'rgba(255, 218, 185, 0.3)'
-    },
-    {
-      id: 11,
-      url: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390',
-      title: 'City Adventures',
-      description: 'Getting lost in new streets and finding ourselves.',
-      date: 'Oct 10, 2023',
-      category: 'Urban',
-      color: 'rgba(169, 169, 169, 0.3)'
-    },
-    {
-      id: 12,
-      url: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0',
-      title: 'Rainy Day Cuddles',
-      description: 'The pitter-patter of rain making our hearts dance.',
-      date: 'Oct 25, 2023',
-      category: 'Cozy Days',
-      color: 'rgba(176, 196, 222, 0.3)'
-    },
-    {
-      id: 13,
-      url: 'https://images.unsplash.com/photo-1491002052546-bf38f186af56',
-      title: 'First Snow Kiss',
-      description: 'Snowflakes falling, hearts warming.',
-      date: 'Nov 5, 2023',
-      category: 'Winter',
-      color: 'rgba(230, 230, 250, 0.3)'
-    },
-    {
-      id: 14,
-      url: 'https://images.unsplash.com/photo-1543589077-47d81606c1bf',
-      title: 'Holiday Magic',
-      description: 'Twinkling lights reflecting in your eyes.',
-      date: 'Dec 1, 2023',
-      category: 'Holidays',
-      color: 'rgba(255, 160, 122, 0.3)'
-    },
-    {
-      id: 15,
-      url: 'https://images.unsplash.com/photo-1467810563316-b5476525c0f9',
-      title: 'New Year Dreams',
-      description: 'Counting down to new beginnings with you.',
-      date: 'Dec 31, 2023',
-      category: 'Celebrations',
-      color: 'rgba(218, 112, 214, 0.3)'
-    },
-    {
-      id: 16,
-      url: 'https://images.unsplash.com/photo-1514306191717-452ec28c7814',
-      title: 'Winter Wonderland',
-      description: 'Making snow angels and warming hearts.',
-      date: 'Jan 5, 2024',
-      category: 'Winter',
-      color: 'rgba(230, 230, 250, 0.3)'
-    },
-    {
-      id: 17,
-      url: 'https://images.unsplash.com/photo-1510797215324-95aa89f43c33',
-      title: 'Candlelit Dinner',
-      description: 'Romantic evening filled with soft whispers and gentle smiles.',
-      date: 'Jan 20, 2024',
-      category: 'Romance',
-      color: 'rgba(255, 182, 193, 0.3)'
-    },
-    {
-      id: 18,
-      url: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7',
-      title: 'Bookstore Adventures',
-      description: 'Getting lost in stories and finding our own.',
-      date: 'Feb 1, 2024',
-      category: 'Adventures',
-      color: 'rgba(210, 180, 140, 0.3)'
     }
   ];
 

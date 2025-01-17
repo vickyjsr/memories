@@ -206,7 +206,7 @@ const MemoryDetails = styled(motion.div)`
   padding: 0.6rem 1.2rem;
   border-radius: 16px;
   font-size: 0.9rem;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -258,93 +258,63 @@ function MemoryCarousel() {
   const memories = [
     {
       id: 1,
-      title: "First Coffee Date ☕",
-      date: "January 15, 2023",
-      image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486"
+      title: "OT Uniform",
+      date: "Favorite",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Ffa687d8c-7556-4e5c-905b-b62d4c753a51.JPG?alt=media&token=31dc663c-13d7-4632-ad97-a181968577c8"
     },
     {
       id: 2,
-      title: "Beach Sunset 🌅",
-      date: "February 14, 2023",
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+      title: "Class 10",
+      date: "Topper",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Ff54ba460-825d-4a9f-98e0-659da220d7f8.JPG?alt=media&token=99917a69-9871-4513-8f29-2ef257526102"
     },
     {
       id: 3,
-      title: "Movie Night 🎬",
-      date: "March 1, 2023",
-      image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c"
+      title: "Not so good restaurant",
+      date: "But damn the vibe",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fef616bd8-4574-4bc5-9a78-bf91659df763.JPG?alt=media&token=de677487-e496-4cf1-91cc-df84e8af09b7"
     },
     {
       id: 4,
-      title: "Park Picnic 🧺",
-      date: "April 5, 2023",
-      image: "https://images.unsplash.com/photo-1526401485004-46910ecc8e51"
+      title: "It was Good",
+      date: "should have/could have",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fee534635-63e5-4b6b-b4b5-7f01d6715a53.JPG?alt=media&token=c0fd9bf4-78c7-4455-bf5a-f1acae9baf4e"
     },
     {
       id: 5,
-      title: "Garden Walk 🌸",
-      date: "May 20, 2023",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07"
+      title: "A 'happy Gourav' Trip 🌸",
+      date: "Take me with ya",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fd93cee78-944e-4d6d-8a6f-5d5de4f0f1f6.JPG?alt=media&token=6dfed59a-9275-4d9c-9538-f98e77c2e71f"
     },
     {
       id: 6,
       title: "Stargazing Night ✨",
-      date: "June 15, 2023",
-      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba"
+      date: "Night Dreaming",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc374b3cb-ccae-4884-bd7d-abc1f0d8476b.JPG?alt=media&token=d837838e-c679-4b9c-9fb8-f7c18c089f1a"
     },
     {
       id: 7,
-      title: "Ice Cream Date 🍦",
-      date: "July 3, 2023",
-      image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a"
+      title: "Ice Cream 🍦",
+      date: "Need more shaadi's like this",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc110656e-7a4a-4aa1-aa4c-5ce60d5ee9b6.JPG?alt=media&token=daed887c-708d-44e0-8943-689f720a398d"
     },
     {
       id: 8,
-      title: "Ferris Wheel Fun 🎡",
-      date: "August 12, 2023",
-      image: "https://images.unsplash.com/photo-1533420896084-06d2bce5365f"
+      title: "Mela 🎡",
+      date: "Spider Man hoodie",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fd04a7001-5634-433b-bf18-6515bc345fa3.JPG?alt=media&token=5149de05-f763-4fa3-a015-dede12dc189a"
     },
     {
       id: 9,
-      title: "Autumn Walk 🍂",
-      date: "September 20, 2023",
-      image: "https://images.unsplash.com/photo-1507371341959-9fb4080ddab3"
+      title: "Birthday ☀️",
+      date: "Mirror pic is all i want",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fef4996cd-fdea-4761-976e-b263655e7f0f.JPG?alt=media&token=d2ca6f6e-0c4a-487b-bb71-185713be4b4c"
     },
     {
       id: 10,
-      title: "Cozy Cafe Morning ☀️",
-      date: "October 8, 2023",
-      image: "https://images.unsplash.com/photo-1445116572660-236099ec97a0"
-    },
-    {
-      id: 11,
-      title: "City Lights 🌃",
-      date: "October 15, 2023",
-      image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390"
-    },
-    {
-      id: 12,
-      title: "Rainy Day Together 🌧️",
-      date: "October 30, 2023",
-      image: "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0"
-    },
-    {
-      id: 13,
-      title: "First Snow ❄️",
-      date: "November 5, 2023",
-      image: "https://images.unsplash.com/photo-1491002052546-bf38f186af56"
-    },
-    {
-      id: 14,
-      title: "Holiday Lights 🎄",
-      date: "December 1, 2023",
-      image: "https://images.unsplash.com/photo-1543589077-47d81606c1bf"
-    },
-    {
-      id: 15,
-      title: "New Year's Eve 🎆",
-      date: "December 31, 2023",
-      image: "https://images.unsplash.com/photo-1467810563316-b5476525c0f9"
+      title: "Uniform pt 2",
+      date: "This uniform is the best!!!",
+      image: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fa966e2c0-c1bb-43f9-b3a5-e0a805fbfb7c.JPG?alt=media&token=a00dd136-b642-4783-988a-06cd97424c6f"
     }
   ];
 
