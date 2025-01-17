@@ -283,7 +283,10 @@ function ImageCollage() {
       images: [
         { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9690.JPG?alt=media&token=f08cfe66-3e81-4f1c-98b1-1f7d6e6debd4", caption: "College" },
         { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc6a69a15-88b6-4084-b81c-7307db81a2a1.JPG?alt=media&token=c3cfd2d7-148a-49e2-bc71-9bc2b11819ba", caption: "home" },
-        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc374b3cb-ccae-4884-bd7d-abc1f0d8476b.JPG?alt=media&token=d837838e-c679-4b9c-9fb8-f7c18c089f1a", caption: "Pink Panther" }
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc374b3cb-ccae-4884-bd7d-abc1f0d8476b.JPG?alt=media&token=d837838e-c679-4b9c-9fb8-f7c18c089f1a", caption: "" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_3080.PNG?alt=media&token=83cb25a5-f543-4797-a607-3855018667b7", caption: "10th" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_0093.JPG?alt=media&token=da64877b-d9ca-4202-8f32-e279fff5420a", caption: "10th" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_3080.PNG?alt=media&token=83cb25a5-f543-4797-a607-3855018667b7", caption: "10th" }
       ]
     },
     {
@@ -296,12 +299,29 @@ function ImageCollage() {
     },
     {
       id: 4,
+      title: "Trips 🧺",
+      mainImage: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2F1bb9dbcb-3f26-4799-a8a5-7ada9b30b0f0.JPG?alt=media&token=e0a9714c-fb5b-4d73-b99b-fa5dcb8cf270",
+      images: [
+        {url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2F72038cb2-3e99-464b-aebd-c4eb04314b44.JPG?alt=media&token=cb21a297-68de-4991-b7b2-8893d0aa9dbe", caption: ""},
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2F55e1c3d2-bba8-4cc4-a5b2-7da87b750581.JPG?alt=media&token=d4c8092a-ce94-4a64-a17e-87d66ecb7cec", caption: "" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2F79b50a71-61ed-4b33-8a21-9450a62ef2d8.JPG?alt=media&token=46548dc0-b322-44ec-97db-b2fa03d62d29", caption: "" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2F6b96dd58-3198-4c5e-846b-5529337ca7fb.JPG?alt=media&token=8a54da1b-eaa7-4dca-be2a-c3f1d304bf13", caption: "" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc6a69a15-88b6-4084-b81c-7307db81a2a1.JPG?alt=media&token=c3cfd2d7-148a-49e2-bc71-9bc2b11819ba", caption: "Darjeeling" },
+        {url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_0093.JPG?alt=media&token=da64877b-d9ca-4202-8f32-e279fff5420a", caption: ""},
+        {url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2F9ca4fb42-3b14-4505-97d0-6c33ea0dfaed.JPG?alt=media&token=fedb8a86-d271-4a6d-b6ed-81ef7c71a832", caption: ""},
+        {url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fd93cee78-944e-4d6d-8a6f-5d5de4f0f1f6.JPG?alt=media&token=6dfed59a-9275-4d9c-9538-f98e77c2e71f", caption: ""},
+      ]
+    },
+    {
+      id: 5,
       title: "My Favorites 🧺",
-      mainImage: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_3081.jpg?alt=media&token=4ebae6d6-4b33-45f7-bebe-61318f5628b7",
+      mainImage: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2F7c1a3848-5867-4e03-a16a-8a6424c384b9.JPG?alt=media&token=3c3ee592-a8b4-4820-902e-7fa47b45e3de",
       images: [
         { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_9431.jpg?alt=media&token=a260497b-89af-445a-84b1-7778ddc67792", caption: "" },
         { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc374b3cb-ccae-4884-bd7d-abc1f0d8476b.JPG?alt=media&token=d837838e-c679-4b9c-9fb8-f7c18c089f1a", caption: "" },
-        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fe71d9d5e-99a9-4afb-8fab-6183596be1b6.jpg?alt=media&token=55edaf56-f17f-4dfb-98d5-c0a38b9f2887", caption: "" }
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fe71d9d5e-99a9-4afb-8fab-6183596be1b6.jpg?alt=media&token=55edaf56-f17f-4dfb-98d5-c0a38b9f2887", caption: "" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_1636.jpg?alt=media&token=a951f6c2-ad3d-4789-b42c-13212aa18938", caption: "Snapchat" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_0099.JPG?alt=media&token=55546c21-c9e6-45b0-b8c5-e439a77bb64d", caption: "Mukutmanipur" }
       ]
     }
   ];
