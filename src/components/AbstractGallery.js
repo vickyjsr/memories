@@ -37,7 +37,8 @@ const Moon = styled(motion.div)`
   mix-blend-mode: screen;
   pointer-events: none;
   border-radius: 50%;
-
+  mask-image: linear-gradient(black, transparent);
+  -webkit-mask-image: linear-gradient(black, transparent);
   @media (max-width: 1200px) {
     width: 300px;
     height: 300px;
