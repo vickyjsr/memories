@@ -2,7 +2,7 @@
   "name": "only-birthday-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://vinona.github.io/memories",
   "dependencies": {
     "@tanstack/react-query": "^5.64.1",
     "cra-template": "1.2.0",
