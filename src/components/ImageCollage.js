@@ -286,7 +286,7 @@ function ImageCollage() {
         { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2Fc374b3cb-ccae-4884-bd7d-abc1f0d8476b.JPG?alt=media&token=d837838e-c679-4b9c-9fb8-f7c18c089f1a", caption: "" },
         { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_3080.PNG?alt=media&token=83cb25a5-f543-4797-a607-3855018667b7", caption: "10th" },
         { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_0093.JPG?alt=media&token=da64877b-d9ca-4202-8f32-e279fff5420a", caption: "10th" },
-        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2FIMG_3080.PNG?alt=media&token=83cb25a5-f543-4797-a607-3855018667b7", caption: "10th" }
+        { url: "https://firebasestorage.googleapis.com/v0/b/chatapp-46c14.appspot.com/o/Preeti%2F55e1c3d2-bba8-4cc4-a5b2-7da87b750581.JPG?alt=media&token=d4c8092a-ce94-4a64-a17e-87d66ecb7cec", caption: "10th" }
       ]
     },
     {
