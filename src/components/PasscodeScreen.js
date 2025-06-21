@@ -153,7 +153,7 @@ function PasscodeScreen({ onAuthenticated }) {
   // Get passcodes from environment variable or use a default
   const getValidPasscodes = () => {
     // In React (created with Create React App), env vars must start with REACT_APP_
-    const envPasscodes = process.env.REACT_APP_PASSCODES;
+    const envPasscodes = process.env.passcodes.PASSCODES;
     
     console.log('Reading environment variable REACT_APP_PASSCODES:', envPasscodes);
     
