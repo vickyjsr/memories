@@ -150,39 +150,26 @@ function PasscodeScreen({ onAuthenticated }) {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  // Get passcodes from environment variable or use a default
   const getValidPasscodes = () => {
     // In React (created with Create React App), env vars must start with REACT_APP_
     const envPasscodes = process.env.REACT_APP_PASSCODES;
     
-    console.log('Reading environment variable REACT_APP_PASSCODES:', envPasscodes);
-    
     if (envPasscodes) {
       // Split by comma and trim whitespace to handle array of passcodes
       const passcodes = envPasscodes.split(',').map(code => code.trim()).filter(code => code.length > 0);
-      console.log('Valid passcodes loaded from .env:', passcodes);
       return passcodes;
     }
     
     // Default passcode if no environment variable is set
-    console.log('No .env variable found, using default passcode: [\'birthday2024\']');
     return ['birthday2024'];
   };
 
   const validPasscodes = getValidPasscodes();
 
-  // Log passcodes on component mount
-  useEffect(() => {
-    console.log('PasscodeScreen mounted. Valid passcodes:', validPasscodes);
-  }, [validPasscodes]);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
-
-    console.log('Attempting to validate passcode:', passcode);
-    console.log('Against valid passcodes:', validPasscodes);
 
     // Simulate a small delay for better UX
     await new Promise(resolve => setTimeout(resolve, 500));
@@ -191,8 +178,6 @@ function PasscodeScreen({ onAuthenticated }) {
     const isValidPasscode = validPasscodes.some(validCode => 
       passcode.trim() === validCode
     );
-
-    console.log('Passcode validation result:', isValidPasscode);
 
     if (isValidPasscode) {
       // Store authentication in localStorage
