@@ -30,15 +30,15 @@ const Container = styled.div`
 
 const FloatingElement = styled.div`
   position: absolute;
-  animation: ${props => props.animation === 'scale' ? floatWithScale : float} ${props => props.duration || '6s'} ease-in-out infinite;
-  animation-delay: ${props => props.delay || '0s'};
+  animation: ${props => props.$animation === 'scale' ? floatWithScale : float} ${props => props.$duration || '6s'} ease-in-out infinite;
+  animation-delay: ${props => props.$delay || '0s'};
   opacity: 0.6;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 
   svg {
-    width: ${props => props.size || '40px'};
-    height: ${props => props.size || '40px'};
-    fill: ${props => props.color || '#fff'};
+    width: ${props => props.$size || '40px'};
+    height: ${props => props.$size || '40px'};
+    fill: ${props => props.$color || '#fff'};
   }
 `;
 
@@ -158,11 +158,11 @@ function FloatingElements() {
             right: element.right,
             bottom: element.bottom
           }}
-          size={element.size}
-          duration={element.duration}
-          delay={element.delay}
-          color={element.color}
-          animation={element.animation}
+          $size={element.size}
+          $duration={element.duration}
+          $delay={element.delay}
+          $color={element.color}
+          $animation={element.animation}
         >
           {getSvgPath(element.type)}
         </FloatingElement>

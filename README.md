@@ -1,3 +1,47 @@
+# Birthday Website with Passcode Protection
+
+A beautiful, romantic birthday website with a secure passcode system to protect your special memories.
+
+## 🔐 Passcode Setup
+
+This website is protected by a passcode system that supports multiple valid passcodes. To set up your custom passcodes:
+
+### Option 1: Environment Variable (Recommended)
+Create a `.env` file in the root directory and add:
+```
+# Single passcode
+REACT_APP_PASSCODE=your-secret-passcode
+
+# OR Multiple passcodes (comma-separated)
+REACT_APP_PASSCODE=passcode1,passcode2,passcode3
+```
+
+### Option 2: GitHub Environment Variables
+If deploying to GitHub Pages or similar platforms:
+1. Go to your repository settings
+2. Navigate to "Secrets and variables" → "Actions"
+3. Add a new repository secret named `REACT_APP_PASSCODE`
+4. Set its value to your desired passcode(s):
+   - Single: `your-secret-passcode`
+   - Multiple: `passcode1,passcode2,passcode3`
+
+### Default Passcode
+If no environment variable is set, the default passcode is: `birthday2024`
+
+### Multiple Passcodes Example
+You can set multiple passcodes for different people:
+```
+REACT_APP_PASSCODE=birthday2024,love123,special2024,forever
+```
+Any of these passcodes will grant access to the website.
+
+## Features
+- 🔐 Secure passcode authentication with multiple valid codes
+- 💾 Persistent login (24 hours)
+- 📱 Responsive design
+- 🎨 Beautiful animations
+- 💕 Romantic timeline and memories
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

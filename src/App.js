@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import MemoryCarousel from './components/MemoryCarousel';
 import ImageCollage from './components/ImageCollage';
@@ -7,6 +7,7 @@ import Timeline from './components/Timeline';
 import Header from './components/Header';
 import FloatingElements from './components/FloatingElements';
 import RomanticMessage from './components/RomanticMessage';
+import PasscodeScreen from './components/PasscodeScreen';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const AppContainer = styled.div`
@@ -83,11 +84,81 @@ const queryClient = new QueryClient({
 });
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Check if user is already authenticated
+    const checkAuth = () => {
+      const authStatus = localStorage.getItem('birthdayWebsiteAuthenticated');
+      const authTime = localStorage.getItem('birthdayWebsiteAuthTime');
+      
+      if (authStatus === 'true' && authTime) {
+        // Check if authentication is still valid (24 hours)
+        const now = Date.now();
+        const authTimestamp = parseInt(authTime);
+        const hoursSinceAuth = (now - authTimestamp) / (1000 * 60 * 60);
+        
+        if (hoursSinceAuth < 24) {
+          setIsAuthenticated(true);
+        } else {
+          // Clear expired authentication
+          localStorage.removeItem('birthdayWebsiteAuthenticated');
+          localStorage.removeItem('birthdayWebsiteAuthTime');
+        }
+      }
+      setIsLoading(false);
+    };
+
+    checkAuth();
+  }, []);
+
+  const handleAuthenticated = () => {
+    setIsAuthenticated(true);
+  };
+
+  const handleLogout = () => {
+    console.log("Logout button clicked, handleLogout function executed.");
+    try {
+      localStorage.removeItem('birthdayWebsiteAuthenticated');
+      localStorage.removeItem('birthdayWebsiteAuthTime');
+      console.log("Local storage cleared successfully");
+      setIsAuthenticated(false);
+      console.log("Authentication state set to false");
+    } catch (error) {
+      console.error("Error during logout:", error);
+    }
+  };
+
+  // Show loading screen while checking authentication
+  if (isLoading) {
+    return (
+      <AppContainer>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          height: '100vh',
+          color: 'white',
+          fontSize: '1.2rem'
+        }}>
+          Loading...
+        </div>
+      </AppContainer>
+    );
+  }
+
+  // Show passcode screen if not authenticated
+  if (!isAuthenticated) {
+    return <PasscodeScreen onAuthenticated={handleAuthenticated} />;
+  }
+
+  // Show main content if authenticated
   return (
     <QueryClientProvider client={queryClient}>
-      <AppContainer>
+      <AppContainer key={isAuthenticated ? 'authenticated' : 'unauthenticated'}>
         <FloatingElements />
-        <Header />
+        <Header onLogout={handleLogout} />
         <Section>
           <MemoryCarousel />
         </Section>

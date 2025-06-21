@@ -101,7 +101,7 @@ const MemoryCard = styled(motion.div)`
 
 const ImageContainer = styled(motion.div)`
   position: relative;
-  border-radius: ${props => props.isExpanded ? '24px' : '16px'};
+  border-radius: ${props => props.$isExpanded ? '24px' : '16px'};
   overflow: hidden;
   transform-origin: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -118,7 +118,7 @@ const ImageContainer = styled(motion.div)`
       transparent 50%,
       rgba(0, 0, 0, 0.8) 100%
     );
-    opacity: ${props => (props.isHovered || props.isExpanded) ? 1 : 0};
+    opacity: ${props => (props.$isHovered || props.$isExpanded) ? 1 : 0};
     transition: opacity 0.3s ease;
     z-index: 1;
 
@@ -142,7 +142,7 @@ const StyledImage = styled(motion.img)`
   filter: brightness(1.15) contrast(1.1) saturate(1.1);
   transition: filter 0.3s ease;
 
-  ${props => props.isHovered || props.isExpanded ? `
+  ${props => props.$isHovered || props.$isExpanded ? `
     filter: brightness(1.2) contrast(1.15) saturate(1.15);
   ` : ''}
 `;
@@ -155,8 +155,8 @@ const ContentOverlay = styled(motion.div)`
   padding: 2rem;
   color: white;
   z-index: 2;
-  transform: translateY(${props => (props.isHovered || props.isExpanded) ? '0' : '20px'});
-  opacity: ${props => (props.isHovered || props.isExpanded) ? 1 : 0};
+  transform: translateY(${props => (props.$isHovered || props.$isExpanded) ? '0' : '20px'});
+  opacity: ${props => (props.$isHovered || props.$isExpanded) ? 1 : 0};
   transition: all 0.3s ease;
 
   @media (max-width: 768px) {
@@ -172,7 +172,7 @@ const ContentOverlay = styled(motion.div)`
 `;
 
 const Title = styled.h3`
-  font-size: ${props => props.isExpanded ? '2.5rem' : '1.8rem'};
+  font-size: ${props => props.$isExpanded ? '2.5rem' : '1.8rem'};
   font-weight: 800;
   margin: 0;
   background: linear-gradient(45deg, #fff, #f0f0f0);
@@ -182,12 +182,12 @@ const Title = styled.h3`
   transition: font-size 0.5s ease;
 
   @media (max-width: 768px) {
-    font-size: ${props => props.isExpanded ? '2rem' : '1.5rem'};
+    font-size: ${props => props.$isExpanded ? '2rem' : '1.5rem'};
   }
 `;
 
 const Description = styled.p`
-  font-size: ${props => props.isExpanded ? '1.2rem' : '1rem'};
+  font-size: ${props => props.$isExpanded ? '1.2rem' : '1rem'};
   margin: 1rem 0;
   color: rgba(255, 255, 255, 0.9);
   max-width: 90%;
@@ -195,7 +195,7 @@ const Description = styled.p`
   transition: font-size 0.5s ease;
 
   @media (max-width: 768px) {
-    font-size: ${props => props.isExpanded ? '1.1rem' : '0.9rem'};
+    font-size: ${props => props.$isExpanded ? '1.1rem' : '0.9rem'};
     margin: 0.5rem 0;
   }
 `;
@@ -204,21 +204,21 @@ const CategoryTag = styled(motion.span)`
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
-  background: ${props => props.color || 'rgba(255, 255, 255, 0.1)'};
+  background: ${props => props.$color || 'rgba(255, 255, 255, 0.1)'};
   padding: 0.5rem 1rem;
   border-radius: 15px;
   color: white;
   font-size: 0.8rem;
   font-weight: 600;
-  opacity: ${props => (props.isHovered || props.isExpanded) ? 1 : 0};
-  transform: translateX(${props => (props.isHovered || props.isExpanded) ? '0' : '-10px'});
+  opacity: ${props => (props.$isHovered || props.$isExpanded) ? 1 : 0};
+  transform: translateX(${props => (props.$isHovered || props.$isExpanded) ? '0' : '-10px'});
   transition: all 0.3s ease;
   z-index: 2;
 
   @media (max-width: 768px) {
     opacity: 1;
     transform: translateX(0);
-    background: ${props => props.color || 'rgba(255, 255, 255, 0.15)'};
+    background: ${props => props.$color || 'rgba(255, 255, 255, 0.15)'};
     backdrop-filter: blur(8px);
   }
 `;
@@ -237,8 +237,8 @@ const DateChip = styled(motion.div)`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  opacity: ${props => (props.isHovered || props.isExpanded) ? 1 : 0};
-  transform: translateY(${props => (props.isHovered || props.isExpanded) ? '0' : '-10px'});
+  opacity: ${props => (props.$isHovered || props.$isExpanded) ? 1 : 0};
+  transform: translateY(${props => (props.$isHovered || props.$isExpanded) ? '0' : '-10px'});
   transition: all 0.3s ease;
   z-index: 2;
 
@@ -419,38 +419,38 @@ function AbstractGallery() {
                   }}
                 >
                   <ImageContainer 
-                    isHovered={isHovered} 
-                    isExpanded={isExpanded}
+                    $isHovered={isHovered} 
+                    $isExpanded={isExpanded}
                   >
                     <StyledImage
                       src={memory.url}
                       alt={memory.title}
-                      isHovered={isHovered}
-                      isExpanded={isExpanded}
+                      $isHovered={isHovered}
+                      $isExpanded={isExpanded}
                       animate={{
                         scale: (isHovered || isExpanded) ? 1.05 : 1,
                         transition: { duration: 0.3 }
                       }}
                     />
                     <CategoryTag
-                      isHovered={isHovered}
-                      isExpanded={isExpanded}
-                      color={memory.color}
+                      $isHovered={isHovered}
+                      $isExpanded={isExpanded}
+                      $color={memory.color}
                     >
                       {memory.category}
                     </CategoryTag>
                     <DateChip 
-                      isHovered={isHovered}
-                      isExpanded={isExpanded}
+                      $isHovered={isHovered}
+                      $isExpanded={isExpanded}
                     >
                       📅 {memory.date}
                     </DateChip>
                     <ContentOverlay 
-                      isHovered={isHovered}
-                      isExpanded={isExpanded}
+                      $isHovered={isHovered}
+                      $isExpanded={isExpanded}
                     >
-                      <Title isExpanded={isExpanded}>{memory.title}</Title>
-                      <Description isExpanded={isExpanded}>{memory.description}</Description>
+                      <Title $isExpanded={isExpanded}>{memory.title}</Title>
+                      <Description $isExpanded={isExpanded}>{memory.description}</Description>
                     </ContentOverlay>
                   </ImageContainer>
                 </MemoryCard>
